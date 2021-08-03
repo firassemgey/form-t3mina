@@ -156,9 +156,7 @@ iframe {
           , #ffffff, #ffffff);
   background: -o-linear-gradient(45deg, #56ab2f, #a8e063);
   background: -moz-linear-gradient(45deg, #56ab2f, #a8e063);
-  background: linear-gradient(
-          45deg
-          , #d21497, #ff0052);
+  background: linear-gradient(45deg, #b12385, #ff0052);
   border-radius: 54px;
   overflow: hidden;
   padding: 72px 55px 65px 55px;
