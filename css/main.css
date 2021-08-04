@@ -79,6 +79,7 @@ ul, li {
 
 
 /*---------------------------------------------*/
+
 input {
 	outline: none;
 	border: none;
@@ -94,15 +95,15 @@ textarea:focus, input:focus {
 }
 
 
-input::-webkit-input-placeholder { color: rgba(255,255,255,0.8);}
-input:-moz-placeholder { color: rgba(255,255,255,0.8);}
-input::-moz-placeholder { color: rgba(255,255,255,0.8);}
-input:-ms-input-placeholder { color: rgba(255,255,255,0.8);}
+input::-webkit-input-placeholder { color: rgba(255,255,255,1);}
+input:-moz-placeholder { color: rgba(255,255,255,1);}
+input::-moz-placeholder { color: rgba(255,255,255,1);}
+input:-ms-input-placeholder { color: rgba(255,255,255,1);}
 
-textarea::-webkit-input-placeholder { color: rgba(255,255,255,0.8);}
-textarea:-moz-placeholder { color: rgba(255,255,255,0.8);}
-textarea::-moz-placeholder { color: rgba(255,255,255,0.8);}
-textarea:-ms-input-placeholder { color: rgba(255,255,255,0.8);}
+textarea::-webkit-input-placeholder { color: rgba(255,255,255,11);}
+textarea:-moz-placeholder { color: rgba(255,255,255,1);}
+textarea::-moz-placeholder { color: rgba(255,255,255,1);}
+textarea:-ms-input-placeholder { color: rgba(255,255,255,1);}
 
 /*---------------------------------------------*/
 button {
@@ -199,8 +200,9 @@ iframe {
   width: 100%;
   background: transparent;
   font-family: Poppins-Regular;
-  font-size: 15px;
-  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff!important;
   line-height: 1.2;
   padding: 0 5px;
 }
@@ -240,9 +242,7 @@ input.input3 {
 
 
 textarea.input3 {
-  min-height: 115px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+
 }
 
 
@@ -314,12 +314,12 @@ textarea.input3 {
 
 .contact3-form-btn:hover {
   color: #fff;
-  height: 60px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  height: 53px;
+  box-shadow: 0px 0px 8px 8px  rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
 .contact3-form-btn:active {
-  height: 55px;
+  height: 50px;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -352,14 +352,14 @@ textarea.input3 {
   background-color: #fff;
   border: 1px solid #c80000;
   border-radius: 2px;
-  padding: 4px 25px 4px 10px;
+  padding: 4px 6px 4px 10px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: 220px;
+  right: 260px;
   pointer-events: none;
 
   font-family: Poppins-Regular;
@@ -390,7 +390,7 @@ textarea.input3 {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: 372px;
+  right: 380px;
 }
 
 .alert-validate:hover:before {
@@ -431,7 +431,7 @@ textarea.input3 {
   font-size: 18px;
   color: #fff;
   line-height: 1.2;
-  margin: 0px 5px;
+  margin: 0px 27px;
 }
 
 .label-radio3::before {
@@ -514,7 +514,8 @@ textarea.input3 {
 /* in select */
 .select2-container .select2-selection--single .select2-selection__rendered {
   font-family: Poppins-Regular;
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: bold;
   color: #fff;
   line-height: 1.2;
   padding-left: 5px ;
