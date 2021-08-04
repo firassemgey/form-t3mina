@@ -261,7 +261,8 @@ textarea.input3 {
 }
 
 .contact3-form-btn {
-  font-family: Poppins-Medium;
+  font-family: Poppins-Regular;
+  font-weight: bold;
   font-size: 16px;
   color: #555555;
   line-height: 1.2;
