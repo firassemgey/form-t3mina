@@ -43,6 +43,8 @@
     var name = $('.validate-input input[name="name"]');
     var email = $('.validate-input input[name="email"]');
     var phone = $('.validate-input input[name="phone"]');
+    var service = $('.validate-input select[name="service"]');
+    var budget = $('.validate-input select[name="budget"]');
     var message = $('.validate-input textarea[name="message"]');
 
 
@@ -84,6 +86,11 @@
                         check = false;
                     }
 
+                    if ($(phone).val().length > 10) {
+                        showValidate(phone);
+                        check = false;
+                    }
+
                     if ($(phone).val().trim() == '') {
                         showValidate(phone);
                         check = false;
@@ -99,8 +106,15 @@
                         check = false;
                     }
 
+                    if($(budget).val().trim() == 'المدينة' ){
+                        showValidate(budget);
+                        check = false;
+
+                    }
+
                     return check;
                 }
+
 
             });
 
@@ -127,9 +141,26 @@
                 check = false;
             }
 
+            if ($(phone).val().length > 10) {
+                showValidate(phone);
+                check = false;
+            }
+
             if ($(phone).val().trim() == '' ) {
                 showValidate(phone);
                 check = false;
+            }
+
+            if($(service).val().trim() == 'المركبة' ){
+                showValidate(service);
+                check = false;
+
+            }
+
+            if($(budget).val().trim() == 'المدينة' ){
+                showValidate(budget);
+                check = false;
+
             }
 
 
@@ -138,23 +169,6 @@
 
     });
 
-    $(document).ready(function(){
-
-        if($("#radio3").prop("checked")) {
-
-            if($("input[id='radio3']:checked")){
-
-                $('.validate-form').addClass("red");
-            }
-        }
-    });
-
-    $("#radio3").on('change', function(){
-        if($("#radio3").prop("checked",false)) {
-            $('.validate-form').removeClass("red");
-            return true
-        }
-    });
 
 
 
@@ -164,14 +178,14 @@
        });
     });
 
-    function showValidate(input) {
-        var thisAlert = $(input).parent();
+    function showValidate(input,select) {
+        var thisAlert = $(input,select).parent();
 
         $(thisAlert).addClass('alert-validate');
     }
 
-    function hideValidate(input) {
-        var thisAlert = $(input).parent();
+    function hideValidate(input,select) {
+        var thisAlert = $(input,select).parent();
 
         $(thisAlert).removeClass('alert-validate');
     }

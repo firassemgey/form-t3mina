@@ -359,12 +359,13 @@ textarea.input3 {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: 260px;
+  right: 0px;
   pointer-events: none;
 
   font-family: Poppins-Regular;
   color: #c80000;
-  font-size: 13px;
+  font-size: 14px;
+    font-weight: bold;
   line-height: 1.4;
   text-align: left;
 
@@ -375,6 +376,7 @@ textarea.input3 {
   -o-transition: opacity 0.4s;
   -moz-transition: opacity 0.4s;
   transition: opacity 0.4s;
+    z-index: 21122121122112;
 }
 
 .alert-validate::after {
@@ -390,7 +392,7 @@ textarea.input3 {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: 380px;
+  right: 387px;
 }
 
 .alert-validate:hover:before {
