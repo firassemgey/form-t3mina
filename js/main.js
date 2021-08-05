@@ -121,59 +121,6 @@
             });
 
 
-    $('.validate-form').on('submit', function () {
-
-
-        if($("#radio2").prop("checked"))
-        {
-
-            var check=true
-            if ($(name).val().length < 3) {
-                showValidate(name);
-                check = false;
-            }
-
-            if ($(name).val().trim() == '') {
-                showValidate(name);
-                check = false;
-            }
-
-            if ($(phone).val().length < 10) {
-                showValidate(phone);
-                check = false;
-            }
-
-            if ($(phone).val().length > 10) {
-                showValidate(phone);
-                check = false;
-            }
-
-            if ($(phone).val().trim() == '' ) {
-                showValidate(phone);
-                check = false;
-            }
-
-            if($(service).val().trim() == 'المركبة' ){
-                showValidate(service);
-                check = false;
-
-            }
-
-            if($(budget).val().trim() == 'المدينة' ){
-                showValidate(budget);
-                check = false;
-
-            }
-
-
-            return check;
-
-
-
-        }
-
-    });
-
     $('.validate-form .input3').each(function(){
         $(this).focus(function(){
            hideValidate(this);
