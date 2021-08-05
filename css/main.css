@@ -346,6 +346,39 @@ textarea.input3 {
 .validate-input {
   position: relative;
 }
+.alert-validate1::before {
+  content: attr(data-validate);
+  position: absolute;
+  max-width: 150%;
+  background-color: #fff;
+  border: 1px solid #c80000;
+  border-radius: 2px;
+  padding: 4px 6px 4px 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 200px;
+  pointer-events: none;
+
+  font-family: Poppins-Regular;
+  color: #c80000;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: right;
+
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  z-index: 21122121122112;
+}
 
 .alert-validate::before {
   content: attr(data-validate);
@@ -380,6 +413,21 @@ textarea.input3 {
   transition: opacity 0.4s;
     z-index: 21122121122112;
 }
+.alert-validate1::after {
+  content: "\f12a";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  color: #fff;
+  font-size: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 387px;
+}
 
 .alert-validate::after {
   content: "\f12a";
@@ -397,18 +445,28 @@ textarea.input3 {
   right: 387px;
 }
 
+.alert-validate1:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
 .alert-validate:hover:before {
   visibility: visible;
   opacity: 1;
 }
 
 @media (max-width: 992px) {
+  .alert-validate1::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@media (max-width: 992px) {
   .alert-validate::before {
     visibility: visible;
     opacity: 1;
   }
 }
-
 
 /*==================================================================
 [ Restyle Radio ]*/

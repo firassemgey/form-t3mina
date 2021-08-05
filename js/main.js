@@ -49,6 +49,8 @@
 
 
 
+
+
             $('.validate-form').on('submit', function () {
 
                 if($("#radio1").prop("checked"))
@@ -178,16 +180,24 @@
        });
     });
 
+
+    if($( window ).width() < 450) {
+        var x='alert-validate1';
+    }
+    else {
+        var x='alert-validate';
+    }
+
     function showValidate(input,select) {
         var thisAlert = $(input,select).parent();
 
-        $(thisAlert).addClass('alert-validate');
+        $(thisAlert).addClass(x);
     }
 
     function hideValidate(input,select) {
         var thisAlert = $(input,select).parent();
 
-        $(thisAlert).removeClass('alert-validate');
+        $(thisAlert).removeClass(x);
     }
 
 
