@@ -165,12 +165,12 @@
 
 
             return check;
+
+
+
         }
 
     });
-
-
-
 
     $('.validate-form .input3').each(function(){
         $(this).focus(function(){
